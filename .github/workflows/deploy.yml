@@ -1,1 +1,3 @@
-name: Deploy on: push jobs: deploy: runs-on: ubuntu-latest
+name: Deploy
+on: push:
+jobs: deploy: runs-on: ubuntu-latest
