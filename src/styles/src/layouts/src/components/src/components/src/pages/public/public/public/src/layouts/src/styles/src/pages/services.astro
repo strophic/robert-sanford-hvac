@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const services = [
+  {
+    title: 'HVAC Installation',
+    description: 'Professional installation of new heating and cooling systems for residential and commercial properties.',
+    features: [
+      'New system installation',
+      'System replacement',
+      'Expert configuration',
+      'Energy-efficient solutions'
+    ]
+  },
+  {
+    title: 'HVAC Repair',
+    description: 'Quick and reliable repair services for all types of HVAC systems.',
+    features: [
+      'Emergency repairs',
+      'Diagnostic services',
+      'Component replacement',
+      'Performance optimization'
+    ]
+  },
+  {
+    title: 'Maintenance',
+    description: 'Regular maintenance services to keep your HVAC system running efficiently.',
+    features: [
+      'Seasonal tune-ups',
+      'Filter replacement',
+      'System cleaning',
+      'Performance testing'
+    ]
+  },
+  {
+    title: 'Air Quality Solutions',
+    description: 'Improve your indoor air quality with our expert solutions.',
+    features: [
+      'Air purification systems',
+      'Humidity control',
+      'Duct cleaning',
+      'Ventilation improvements'
+    ]
+  }
+];
+---
+
+<Layout title="Our Services - Robert Sanford HVAC">
+  <Header />
+  
+  <main class="pt-20">
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-center mb-12">Our Services</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {services.map(service => (
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h2 class="text-2xl font-bold mb-4">{service.title}</h2>
+              <p class="text-gray-600 mb-6">{service.description}</p>
+              <ul class="space-y-2">
+                {service.features.map(feature => (
+                  <li class="flex items-center">
+                    <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        
+        <div class="text-center mt-12">
+          <a href="/robert-sanford-hvac/contact" class="btn btn-primary">Contact Us for Service</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
