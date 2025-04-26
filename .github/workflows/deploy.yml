@@ -1,6 +1,4 @@
-name: Deploy
-
-on: push
+name: Deploy on: push
 permissions: contents: read pages: write id-token: write
 jobs: build: runs-on: ubuntu-latest steps: - uses: actions/checkout@v4
   - uses: actions/setup-node@v4
