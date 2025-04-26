@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/robert-sanford-hvac/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content="Professional HVAC services in the Greater Atlanta Area. Installation, repair, and maintenance services for all your heating and cooling needs." />
+  </head>
+  <body class="min-h-screen bg-gray-50">
+    <slot />
+  </body>
+</html>
