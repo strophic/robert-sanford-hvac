@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://strophic.github.io/robert-sanford-hvac/sitemap-index.xml
