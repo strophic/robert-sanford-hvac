@@ -30,6 +30,6 @@ steps:
 
     with:
 
-      path: dist
+      path: ./dist
 
   - uses: actions/deploy-pages@v2
