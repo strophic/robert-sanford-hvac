@@ -1,25 +1,8 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+command = "npm run build"
+publish = "dist"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[build.processing]
-  skip_processing = true
-
-[build.processing.css]
-  bundle = false
-  minify = false
-
-[build.processing.js]
-  bundle = false
-  minify = false
-
-[build.processing.html]
-  pretty_urls = false
-
-[build.processing.images]
-  compress = false
+from = "/*"
+to = "/index.html"
+status = 200
