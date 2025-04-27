@@ -1,11 +1,66 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Robert Sanford HVAC Services">
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-blue-900 to-blue-700 text-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">Professional HVAC Services</h1>
+          <p class="text-xl mb-8">Keeping your home comfortable all year round</p>
+          <a href="#contact" class="bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">
+            Contact Us Today
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16" id="services">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-4">AC Installation & Repair</h3>
+            <p>Expert installation and repair services for all AC brands and models.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-4">Heating Services</h3>
+            <p>Comprehensive heating system maintenance, repair, and installation.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-4">Maintenance Plans</h3>
+            <p>Regular maintenance to keep your HVAC system running efficiently.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-gray-100 py-16" id="contact">
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+          <div class="space-y-4">
+            <p class="text-xl">
+              <span class="font-semibold">Phone:</span> (555) 123-4567
+            </p>
+            <p class="text-xl">
+              <span class="font-semibold">Email:</span> info@robertsanfordhvac.com
+            </p>
+            <p class="text-xl">
+              <span class="font-semibold">Hours:</span> Monday-Friday: 8am-6pm
+            </p>
+          </div>
+          <div class="mt-8">
+            <a href="tel:5551234567" class="bg-blue-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-800 transition duration-300">
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>

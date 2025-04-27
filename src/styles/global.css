@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles can be added below */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+}
+
+/* Container modifications */
+.container {
+  @apply px-4 mx-auto;
+  max-width: 1280px;
+}
+
+/* Default heading styles */
+h1 {
+  @apply text-4xl font-bold md:text-5xl;
+}
+
+h2 {
+  @apply text-3xl font-bold md:text-4xl;
+}
+
+h3 {
+  @apply text-2xl font-bold md:text-3xl;
+}
+
+/* Default link styles */
+a {
+  @apply transition-colors duration-200;
+}
+
+/* Default button styles */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium transition-colors duration-200 rounded-lg;
+}
+
+.btn-primary {
+  @apply text-white bg-blue-600 hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply text-blue-600 bg-blue-100 hover:bg-blue-200;
+}
